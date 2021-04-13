@@ -1,0 +1,6 @@
+<h2>{{ cityName }}</h2>
+<cm-detailed-weather [weather]="cityWeather?.weather"></cm-detailed-weather>
+<nav>
+  <a (click)="onToogleBookmark()" *ngIf="!existsOnBookmarks">Adicionar aos favoritos</a>
+  <a routerLink="/details">Ver detathes</a>
+</nav>

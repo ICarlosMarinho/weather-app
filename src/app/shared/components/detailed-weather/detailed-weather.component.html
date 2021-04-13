@@ -1,0 +1,12 @@
+<div class="weather-temp">
+  <h3>{{ weather?.temp }}K</h3>
+
+  <img [src]="weatherIcon" alt="Icon that represents current weather" />
+  <span>{{ weather?.description }}</span>
+</div>
+
+<div class="weather-misc">
+  <span><strong>Sensação térmica</strong> {{ weather?.feelsLike }}K</span>
+  <span><strong>Umidade</strong> {{ weather?.humidity }}%</span>
+  <span><strong>Vento</strong> {{ weather?.wind?.speed }} m/s</span>
+</div>

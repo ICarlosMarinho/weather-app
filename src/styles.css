@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+  height: calc(100vh - 60px);
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  transition: all ease-in 0.3s;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #ababab;
+}
+
+* {
+  font-family: Geneva, Verdana, sans-serif;
+}
+
+button,
+input {
+  border: none;
+  border-radius: 5px;
+}

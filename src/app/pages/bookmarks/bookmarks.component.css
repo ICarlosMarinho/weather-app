@@ -1,0 +1,25 @@
+:host,
+.bookmarks-list {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+:host {
+  row-gap: 10px;
+  align-items: center;
+}
+
+.bookmarks-list {
+  width: 30%;
+  border-radius: 5px;
+  background-color: #fafafa;
+  padding: 10px;
+}
+
+.bookmarks-item {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+}

@@ -1,0 +1,32 @@
+:host {
+  display: flex;
+  flex-direction: row;
+  background-color: #fafafa;
+  padding: 5px;
+  justify-content: space-between;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+span {
+  width: fit-content;
+  color: #424242;
+}
+
+strong {
+  color: #000;
+}
+
+.weather-temp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weather-misc {
+  display: flex;
+  flex-direction: column;
+  height: inherit;
+  justify-content: space-between;
+}

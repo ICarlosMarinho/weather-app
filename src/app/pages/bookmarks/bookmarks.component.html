@@ -1,0 +1,10 @@
+<h2>Favoritos</h2>
+
+<div class="bookmarks-list" *ngIf="bookmarks.length > 0">
+  <div class="bookmarks-item" *ngFor="let item of bookmarks">
+    <a routerLink="/details">{{ item.name }}</a>
+    <a (click)="removeBookmark(item.id)"><i>Remover</i></a>
+  </div>
+</div>
+
+<span *ngIf="bookmarks.length == 0">Lista de favoritos vazia!</span>

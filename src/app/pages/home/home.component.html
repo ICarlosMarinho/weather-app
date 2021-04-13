@@ -1,0 +1,31 @@
+<div class="search-container">
+  <form class="search-form" [formGroup]="group">
+    <label>Pesquisar</label>
+    <div class="form-row" for="search-input">
+      <input
+        formControlName="searchInput"
+        id="search-input"
+        type="text"
+        placeholder="Cidade"
+        autocomplete="country-name"
+        autofocus
+      />
+      <button
+        (click)="search()"
+        type="button"
+        [disabled]="!group.controls['searchInput'].valid"
+        type="button"
+      >
+        Enviar
+      </button>
+    </div>
+    <div *ngIf="cityWeather && !(loading | async)">
+      <cm-current-weather
+        [cityWeather]="cityWeather"
+        (toogleBookmark)="onToogleBookmark()"
+        [existsOnBookmarks]="existsOnBookmarks()"
+      ></cm-current-weather>
+    </div>
+    <div *ngIf="loading | async">Carregando...</div>
+  </form>
+</div>

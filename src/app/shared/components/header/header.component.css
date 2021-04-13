@@ -1,0 +1,25 @@
+:host {
+  display: flex;
+  height: 60px;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #121212;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.app-title {
+  color: #fff;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+}
+
+.nav-bar a {
+  color: #fff;
+}

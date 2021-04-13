@@ -1,0 +1,26 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  margin-top: 40px;
+}
+
+a {
+  color: rgb(56, 56, 56);
+  font-weight: lighter;
+}
+
+a:hover {
+  color: #000;
+}
+
+h2 {
+  font-size: larger;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
